@@ -6,14 +6,6 @@ import { fileURLToPath } from 'url';
 import mongoose, { Schema, Document } from 'mongoose';
 import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
-import cors from 'cors';
-
-// Allow requests from your Vercel frontend or any origin
-app.use(cors({
-  origin: '*', // Or specify your vercel URL: 'https://your-storetrack-app.vercel.app'
-  methods: ['GET', 'POST', 'PATCH', 'DELETE', 'PUT'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
 
 dotenv.config();
 
